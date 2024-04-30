@@ -7,6 +7,8 @@
 | Author(s)  | Ao Wang          |
 | Date:      | April 30th, 2024 |
 
+**keywords:** Apache Parquet, Data Storage, Data Lake, Data-as-a-Service, Cloud Storage, Columnar Data Format
+
 As a Data-as-a-Service (DaaS) lakehouse platform, some of the services we provide are cloud storage, data migration from other cloud storage providers to BambooHub, and live connection to other cloud storage provider. The driving force for influencing this design decision is being cost-effective in storing unstructured, semi-structured, and structured data, while still maintaining lightning-fast query times.
 
 ## Decision

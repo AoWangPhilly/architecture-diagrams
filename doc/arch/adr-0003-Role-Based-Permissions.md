@@ -11,19 +11,14 @@ Some data should only be accessible to certain users. For example, a user should
 
 ## Decision
 
-We will implement role-based permissions to control access to data. We will use a role-based access control (RBAC) model, which is a policy-neutral access control mechanism defined around roles and privileges. The components of RBAC such as role-permissions, user-role, and role-role relationships will be used to control access to data. We will use a role-based permissions system to control access to data based on the user's role.
-
-Describe here our response to these forces, that is, the design decision that was made. State the decision in full sentences, with active voice ("We will...").
+We will utilize Okta's role-based access control (RBAC) to control access to data. RBAC will have core elements of administrators, roles, and permissions. Administrators will be able to create roles and assign permissions to roles. Roles will be assigned to users. Permissions will be assigned to roles. This will allow for fine-grained access control to data.
 
 ## Rationale
 
-Describe here the rationale for the design decision. Also indicate the rationale for significant _rejected_ alternatives. This section may also indicate assumptions, constraints, requirements, and results of evaluations and experiments.
+The driving force for influencing this design decision is security and privacy. We need to ensure that data is only accessible to those who are authorized to access it. Additionally, we need to ensure that we are compliant with regulations such as GDPR and HIPAA. Okta's RBAC is a widely used and well-documented solution for role-based access control. On our platform, the consumers are able to create their own roles and assign permissions to those roles, deciding who's able to read and write data.
 
-## Status
-
-[Proposed | Accepted | Deprecated | Superseded]
-If deprecated, indicate why. If superseded, include a link to the new ADR.
+The main alternative to Okta's RBAC is to build our own role-based access control system. However, this would require a lot of development time and resources. Additionally, Okta's RBAC is a widely used and well-documented solution, which means that it's more likely to be secure and compliant with regulations such as GDPR and HIPAA.
 
 ## Consequences
 
-Describe here the resulting context, after applying the decision. All consequences should be listed, not just the "positive" ones.
+Since we are using a third-party solution, we are dependent on Okta's RBAC. If Okta's RBAC goes down, we will not be able to control access to data. Additionally, we will need to pay for Okta's RBAC, which can lead to higher costs. However, the benefits of using Okta's RBAC far outweigh the downsides, as we're in the business of providing secure and compliant access to data, which is crucial for our platform. This will help save money on development time and resources.

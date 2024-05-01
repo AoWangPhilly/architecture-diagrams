@@ -23,3 +23,5 @@ The main alternative to Okta's RBAC is to build our role-based access control sy
 ## Consequences
 
 Since we use a third-party solution, we depend on Okta's RBAC. If Okta's RBAC goes down, we cannot control access to data. However, the benefits of using Okta's RBAC far outweigh the downsides. Not only does it provide secure and compliant access to data, which is crucial for our platform, but it also helps save money on development time and resources, making it a cost-effective choice.
+
+![alt text](../img/ADR3.drawio.png)

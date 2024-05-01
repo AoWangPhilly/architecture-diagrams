@@ -35,3 +35,6 @@ Some downsides to Apache Druid is that we primarily store data in Apache Parquet
 Additionally, we are able to ingest data in real-time and store the data as segments, but this can lead to higher storage costs. Therefore, the strategy is to transform the data from segments to Parquet files to reduce storage costs.
 
 And if we want to do batch processing, we'll need to transform the data from Parquet files to segments. However, the benefits of Druid far outweigh the downsides, as we're in the business of providing lightning-fast OLAP SQL queries, which is crucial for our platform.
+
+
+![alt text](../img/ADR2.drawio.png)

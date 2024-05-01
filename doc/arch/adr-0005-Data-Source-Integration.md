@@ -38,3 +38,8 @@ Negative Consequences:
   - Increased Complexity: Managing multiple independent plugins can introduce complexity in terms of dependency management and system configuration.
   - Overhead in Coordination: Coordinating updates across various plugins, especially when they affect shared functionalities, requires meticulous planning and testing.
   - Variability in Plugin Quality: Depending on the development practices and standards, there might be variability in the quality and performance of different plugins.
+
+
+![alt text](../img/ADR5.drawio.png)
+
+![alt text](../img/ADR5-p2.drawio.png)

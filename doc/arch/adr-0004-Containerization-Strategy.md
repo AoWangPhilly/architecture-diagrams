@@ -39,3 +39,5 @@ Rejected Alternatives:
   - Complexity in Management: There is an increased complexity in managing a Kubernetes environment, requiring specialized skills and potentially leading to higher operational overhead.
   - Dependency on AWS: By choosing EKS and EC2, we are further locking ourselves into the AWS ecosystem, which could limit our options should we wish to diversify our cloud strategy in the future.
   - Cost of Expertise: While operational costs are optimized, the cost of acquiring or training for specialized Kubernetes expertise can be significant.
+
+![alt text](../img/ADR4.drawio.png)

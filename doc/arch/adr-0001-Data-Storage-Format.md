@@ -37,13 +37,15 @@ Rejected Alternatives:
     - Like Apache Parquet, ORC is a type-aware columnar file format designed for Hadoop workloads.
     - Compared to Parquet, ORC has less community support, meaning fewer resources, libraries, and tools for this file format.
 
-Below shows a cost and query speed comparison between storing data as CSV versus Apache Parquet.
+Below shows a cost and query speed comparison between storing data as CSV versus Apache Parquet. [Source](https://www.databricks.com/glossary/what-is-parquet)
 
 | Dataset                              | Size on Amazon S3           | Query Run Time | Data Scanned          | Cost          |
 | ------------------------------------ | --------------------------- | -------------- | --------------------- | ------------- |
 | Data stored as CSV files             | 1 TB                        | 236 seconds    | 1.15 TB               | $5.75         |
 | Data stored in Apache Parquet Format | 130 GB                      | 6.78 seconds   | 2.51 GB               | $0.01         |
 | Savings                              | 87% less when using Parquet | 34x faster     | 99% less data scanned | 99.7% savings |
+
+
 
 ## Consequences
 

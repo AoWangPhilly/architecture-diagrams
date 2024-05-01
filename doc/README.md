@@ -6,5 +6,5 @@
 1. [ADR 1: Apache Parquet for Primary Data Storage](arch/adr-0001-Data-Storage-Format.md)
 2. [ADR 2: Apache Druid for Lightning Fast OLAP SQL Queries](arch/adr-0002-OLAP-SQL-Query.md)
 3. [ADR 3: Role-Based Permissions](arch/adr-0003-Role-Based-Permissions.md)
-4. [ADR 4: Microservices Architecture](arch/adr-0004-Microservices-Architecture.md)
+4. [ADR 4: Containerization Strategy](arch/adr-0004-Containerization-Strategy.md)
 5. [ADR 5: Data Source Integration](arch/adr-0005-Data-Source-Integration.md)

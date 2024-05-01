@@ -26,19 +26,19 @@ Rejected alternatives:
 - Monolithic Architecture: Integrating all data sources directly into the core application was considered but rejected due to high maintenance complexity and inflexibility in adapting to changes in data sources.
 - Third-Party Integration Tools: Using external platforms or services for integration was also considered but dismissed because of potential issues with data governance, higher operational costs, and less control over the integration process.
 
-
 ## Consequences
 
 Positive Consequences:
-  - Enhanced Adaptability: The system can quickly adapt to changes in data storage technologies and integration requirements.
-  - Ease of Integration: New data sources can be added with minimal impact on the existing infrastructure, facilitating growth and expansion.
-  - Focused Development: Developers can focus on specific integrations without needing comprehensive knowledge of the entire system, leading to more efficient development cycles.
+
+- Enhanced Adaptability: The system can quickly adapt to changes in data storage technologies and integration requirements.
+- Ease of Integration: New data sources can be added with minimal impact on the existing infrastructure, facilitating growth and expansion.
+- Focused Development: Developers can focus on specific integrations without needing comprehensive knowledge of the entire system, leading to more efficient development cycles.
 
 Negative Consequences:
-  - Increased Complexity: Managing multiple independent plugins can introduce complexity in terms of dependency management and system configuration.
-  - Overhead in Coordination: Coordinating updates across various plugins, especially when they affect shared functionalities, requires meticulous planning and testing.
-  - Variability in Plugin Quality: Depending on the development practices and standards, there might be variability in the quality and performance of different plugins.
 
+- Increased Complexity: Managing multiple independent plugins can introduce complexity in terms of dependency management and system configuration.
+- Overhead in Coordination: Coordinating updates across various plugins, especially when they affect shared functionalities, requires meticulous planning and testing.
+- Variability in Plugin Quality: Depending on the development practices and standards, there might be variability in the quality and performance of different plugins.
 
 ![alt text](../img/ADR5.drawio.png)
 

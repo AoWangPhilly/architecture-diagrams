@@ -9,12 +9,11 @@
 
 Some data should only be accessible to certain users. For example, a user should only be able to access their data and not other users' data. However, in an organization, different roles have different data access levels. For example, a manager may have access to all data, while a regular employee may only have access to their own data. Another example may be a hospital. Since patient data is sensitive, only doctors and nurses should have access to patient data. This is crucial for security and privacy reasons and compliance with regulations such as GDPR and HIPAA.
 
-
 ## Decision
 
 We will utilize Okta's role-based access control (RBAC) to control access to data. RBAC will have core elements of administrators, roles, and permissions. Administrators will be able to create roles and assign permissions to them. Roles will be assigned to users, and permissions will be assigned to roles. This will allow for fine-grained access control to data.
-## Rationale
 
+## Rationale
 
 The driving force that influences this design decision is security and privacy. We need to ensure that data is only accessible to those who are authorized to access it. Additionally, we must ensure that we comply with regulations such as GDPR and HIPAA. Okta's RBAC is a widely used and well-documented solution for role-based access control. On our platform, the consumers can create their own roles and assign permissions to those roles, deciding who can read and write data.
 

@@ -10,6 +10,7 @@
 **keywords:** Apache Parquet, Data Lake, Data-as-a-Service, Cloud Storage, Columnar Data File Format
 
 As a Data-as-a-Service (DaaS) lakehouse platform, we provide:
+
 - Cloud storage
 - Data migration from other cloud storage providers to BambooHub
 - Live connection to other cloud storage providers
@@ -25,17 +26,18 @@ We will utilize Apache Parquet, an open-source, column-oriented data file format
 Our platform used Apache Parquet because it's designed for efficient data storage and retrieval. It provides efficient data compression and encoding schemes with enhanced performance to handle complex data in bulk. Additionally, it supports complex data types and advanced nested data structures, which will work well with most data.
 
 Rejected Alternatives:
-  - CSV
-    - Although widely used, it's inefficient for large datasets because it's a row-based storage format. It'll result in slow queries, especially if only a subset of columns are needed.
-    - Additionally, there's no support for data types, which could lead to data loss or errors when importing data.
-  - Avro
-    - Like Parquet, it supports schema evolution, enabling schema modification without changes to the data.
-    - However, it is also row-based, which is inefficient for the same reasons CSV is.
-    - The schema definition for Avro can be complex, which is challenging to work with
-  - Optimized Row Columnar (ORC)
-    - ORC is commonly used in cases where high-speed writing is necessary, and it supports ACID properties
-    - Like Apache Parquet, ORC is a type-aware columnar file format designed for Hadoop workloads.
-    - Compared to Parquet, ORC has less community support, meaning fewer resources, libraries, and tools for this file format.
+
+- CSV
+  - Although widely used, it's inefficient for large datasets because it's a row-based storage format. It'll result in slow queries, especially if only a subset of columns are needed.
+  - Additionally, there's no support for data types, which could lead to data loss or errors when importing data.
+- Avro
+  - Like Parquet, it supports schema evolution, enabling schema modification without changes to the data.
+  - However, it is also row-based, which is inefficient for the same reasons CSV is.
+  - The schema definition for Avro can be complex, which is challenging to work with
+- Optimized Row Columnar (ORC)
+  - ORC is commonly used in cases where high-speed writing is necessary, and it supports ACID properties
+  - Like Apache Parquet, ORC is a type-aware columnar file format designed for Hadoop workloads.
+  - Compared to Parquet, ORC has less community support, meaning fewer resources, libraries, and tools for this file format.
 
 Below shows a cost and query speed comparison between storing data as CSV versus Apache Parquet. [Source](https://www.databricks.com/glossary/what-is-parquet)
 
@@ -44,8 +46,6 @@ Below shows a cost and query speed comparison between storing data as CSV versus
 | Data stored as CSV files             | 1 TB                        | 236 seconds    | 1.15 TB               | $5.75         |
 | Data stored in Apache Parquet Format | 130 GB                      | 6.78 seconds   | 2.51 GB               | $0.01         |
 | Savings                              | 87% less when using Parquet | 34x faster     | 99% less data scanned | 99.7% savings |
-
-
 
 ## Consequences
 

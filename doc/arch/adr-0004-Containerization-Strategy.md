@@ -9,7 +9,7 @@
 
 **keywords:** Docker, Kubernetes, Containerization, Microservices, DevOps
 
-The driving force for influencing this design decision is to improve the deployment process and make it more efficient. We need to ensure that our platform is scalable and reliable. Additionally, we need to ensure that our platform is easy to deploy and manage.
+The driving force influencing this design decision is making the deployment process more efficient. We must ensure our platform is scalable, reliable, and easy to deploy and manage.
 
 ## Decision
 
@@ -17,9 +17,11 @@ We will utilize AWS Elastic Kubernetes Service (EKS) for container orchestration
 
 ## Rationale
 
-- Scalability: Using EKS with EC2 instances allows our infrastructure to scale dynamically based on the workload, which is essential for handling varying loads typical in data analytics platforms like Apache Druid.
-- Flexibility: EKS provides the flexibility to configure the Kubernetes cluster to meet specific needs, including network configurations and security settings. EC2 instances offer a range of types that can be optimized for compute, memory, or storage, depending on the Druid component requirements.
-- Reliability: Kubernetes’ self-healing features, such as automated restarts of failed containers and pods, enhance the reliability of the entire platform.
+Scalability: Using EKS with EC2 instances allows our infrastructure to scale dynamically based on the workload, which is essential for handling varying loads typical in data analytics platforms like Apache Druid.
+
+Flexibility: EKS provides the flexibility to configure the Kubernetes cluster to meet specific needs, including network configurations and security settings. EC2 instances offer a range of types that can be optimized for compute, memory, or storage, depending on the Druid component requirements.
+
+Reliability: Kubernetes’ self-healing features, such as automated restarts of failed containers and pods, enhance the reliability of the entire platform.
 
 Rejected Alternatives:
 
